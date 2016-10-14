@@ -102,8 +102,11 @@ String[] data = {
 αυτό υποδυκνύει πως η πρώτη μεταβλητή αναφέρεται σε αρχείο διάταξης xml ενώ η δεύτερη αναφέρεται σε συγκεκριμένο συστατικό xml.
 
 - Κώδικας για να συνδέσουμε με τον ```Adapter``` με το ```ListView```. Αρχικά να 'πάρουμε' στα χέρια μας μία αναφορά προς το ListView χρησιμοποιώντας το ID που της έχουμε δώσει (```@+id/listview_forecast```). Υπενθύμιση η πρόσβαση στα ID μέσα απο τον κώδικα γίνεται με τη χρήση του ```R.java```. 
+Λίγα λόγια για το πώς βρίσκουμε τα Views Με τη μέθodo ```findViewById()```
 
-Ο τελικός κώδικας είναι:
+![Finding Views](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/findingViews.PNG)
+
+Έτσι, ο κώδικας που πρέπει να γράψουμε είναι:
 ```
             ListView forecastListView = (ListView)rootView.findViewById(R.id.listview_forecast);
             forecastListView.setAdapter(forecastListAdapter);
