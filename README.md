@@ -88,6 +88,15 @@ String[] data = {
                     "Sun 6/29 - Sunny - 20/7"         };
 ```
 
-- Επεξήγηση ροής δεδομένων στο ListView.
+- Επεξήγηση ροής δεδομένων στο ListView. (Σχετικό βίντεο: https://www.youtube.com/watch?v=uOOupBYZeO0)
 
-![ListView](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/listViewDataHandling.PNG)
+![ListView](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/listViewDataHandlingModel.PNG)
+
+- Γράφουμε κώδικα στη μέθοδο ```onCreateView(...)``` για να φτιάξουμε τον ```Adapter``` και να τον συνδέσουμε με το ```ListView```. Στην περίπτωσή μας χρειαζόμαστε έναν ```ArrayAdapter```. Ο κατασκευαστής του παίρνει 4 παραμέτρους.
+  1. Το context. Περιλαμβάνει όλες τις πληροφορίες για το περιβάλλον εκτέλεσης και δίνει πρόσβαση σε υπηρεσίες και αρχεία του συστήματος  (```getActivity()```)
+  2. ID του list item layout. Θα το πάρουμε μέσω του καθολικού και ειδικού αρχείου R.java. Αυτό το αρχείο παρέχει ανθρώπινες ονομασίες (αντί για διευθύνσεις μνήμης) για όλα τα resources μας. Υπάρχει πάντα σε κάθε android project (```R.layout.list_item_forecast```)
+  3. ID του text view (```R.id.list_item_forecast_textview```)
+  4. Τη λίστα με τα δεδομένα (όπως ονομάσαμε το ArrayList)
+  
+Ας δώσουμε λίγη προσοχή στις ονομασίες απο το αρχείο R.java. Η μία ξεκινά με ```R.layout``` ενώ η άλλη με ```R.id```
+αυτό υποδυκνύει πως η πρώτη μεταβλητή αναφέρεται σε αρχείο διάταξης xml ενώ η δεύτερη αναφέρεται σε συγκεκριμένο συστατικό xml.
