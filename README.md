@@ -63,6 +63,16 @@ android:gravity="center_vertical"
 - AdapterView: Προσαρμογέας, παρέχει τα δεδομένα προς το View, χωρίς να τον ενδιαφέρει τι είδους view είναι. Έτσι τα καιρικά δεδομένα μπορούν να παρουσιαστούν είτε σε ```ListView```, είτε σε ```GridView```
 
 - Υλοποίηση του ListView: τροποποιούμε το ```fragment_mail.xml``` έτσι ώστε: 
-  - Να εμφανίζει ένα ListView αντί για TextView
 
+  1 Να εμφανίζει ένα ```ListView``` αντί για ```TextView```
+  2 Να έχει ```FrameLayout``` αντί για ```RelativeLayout```
+
+- Το ListView πρέπει να γίνει:
+```
+<ListView
+android:id="@+id/listview_forecast"
+android:layout_width="match_parent"
+android:layout_height="match_parent" />
+
+```
 
