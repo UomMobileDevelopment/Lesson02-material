@@ -92,7 +92,7 @@ String[] data = {
 
 ![ListView](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/listViewDataHandlingModel.PNG)
 
-- Γράφουμε κώδικα στη μέθοδο ```onCreateView(...)``` για να φτιάξουμε τον ```Adapter``` και να τον συνδέσουμε με το ```ListView```. Στην περίπτωσή μας χρειαζόμαστε έναν ```ArrayAdapter```. Ο κατασκευαστής του παίρνει 4 παραμέτρους.
+- Γράφουμε κώδικα στη μέθοδο ```onCreateView(...)``` για να φτιάξουμε τον ```Adapter```. Στην περίπτωσή μας χρειαζόμαστε έναν ```ArrayAdapter```. Ο κατασκευαστής του παίρνει 4 παραμέτρους.
   1. Το context. Περιλαμβάνει όλες τις πληροφορίες για το περιβάλλον εκτέλεσης και δίνει πρόσβαση σε υπηρεσίες και αρχεία του συστήματος  (```getActivity()```)
   2. ID του list item layout. Θα το πάρουμε μέσω του καθολικού και ειδικού αρχείου R.java. Αυτό το αρχείο παρέχει ανθρώπινες ονομασίες (αντί για διευθύνσεις μνήμης) για όλα τα resources μας. Υπάρχει πάντα σε κάθε android project (```R.layout.list_item_forecast```)
   3. ID του text view (```R.id.list_item_forecast_textview```)
@@ -100,3 +100,46 @@ String[] data = {
   
 Ας δώσουμε λίγη προσοχή στις ονομασίες απο το αρχείο R.java. Η μία ξεκινά με ```R.layout``` ενώ η άλλη με ```R.id```
 αυτό υποδυκνύει πως η πρώτη μεταβλητή αναφέρεται σε αρχείο διάταξης xml ενώ η δεύτερη αναφέρεται σε συγκεκριμένο συστατικό xml.
+
+- Κώδικας για να συνδέσουμε με τον ```Adapter``` με το ```ListView```. Αρχικά να 'πάρουμε' στα χέρια μας μία αναφορά προς το ListView χρησιμοποιώντας το ID που της έχουμε δώσει (```@+id/listview_forecast```). Υπενθύμιση η πρόσβαση στα ID μέσα απο τον κώδικα γίνεται με τη χρήση του ```R.java```. 
+
+Ο τελικός κώδικας είναι:
+```
+            ListView forecastListView = (ListView)rootView.findViewById(R.id.listview_forecast);
+            forecastListView.setAdapter(forecastListAdapter);
+```
+
+και έτσι έχουμε συνολικά:
+
+```
+public static class PlaceholderFragment extends Fragment {
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            // Create some dummy data for the ListView.  Here's a sample weekly forecast
+            String[] data = {
+                    "Mon 6/23 - Sunny - 31/17",
+                    ///........
+                    "Sun 6/29 - Sunny - 20/7"
+            };
+            List<String> weekForecast = new ArrayList<String>(Arrays.asList(data));
+
+            ArrayAdapter<String> forecastListAdapter =
+                    new ArrayAdapter<String>(
+                            getActivity(),
+                            R.layout.list_item_forecast,
+                            R.id.list_item_forecast_textview, weekForecast);
+
+            ListView forecastListView = (ListView)rootView.findViewById(R.id.listview_forecast);
+            forecastListView.setAdapter(forecastListAdapter);
+
+
+            return rootView;
+        }
+    }
+```
