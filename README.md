@@ -15,8 +15,15 @@
 
 ![alt tag](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/Shunshine-dummy-screen-smaller.png)
 
+### Git Version Control System - Github online repository hosting
+
+Σχετικό μάθημα για το Git https://classroom.udacity.com/courses/ud775
 
 ### Οδηγίες
+
+Μάθημα στο Udacity: https://classroom.udacity.com/courses/ud853/lessons/1395568821/concepts/15824886820923
+
+
 - Ξεκινάμε σχεδιάζοντας το mockup σχέδιο της οθόνης μας. Πώς θέλουμε να εμφανίζονται οι καιρικές συνθήκες;
 
 - ```MainActivity``` Η βασική κλάση απο την οποία ξεκινάνε όλα. Εκεί μέσα υπάρχει η inner class ```PlaceholderFragment```. Το Fragment είναι ένας αρθρωτός γραφικός υποδοχέας που μπορεί να επαναχρησιμοποιηθεί σε άλλα Activities. (modular container).
