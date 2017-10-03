@@ -11,17 +11,19 @@
 ΠΩΣ ΕΝΕΡΓΟΠΟΙΟΥΜΕ ΤΟ USB Debugging: https://www.youtube.com/watch?v=NtrrtkSentA
 
 
-Στο 2ο μάθημα θα κατασκευάσουμε απο την αρχή μια εφαρμογή ανάγνωσης καιρικών συνθηκών σε λίστα.
-
-![alt tag](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/Shunshine-dummy-screen-smaller.png)
-
 ### Git Version Control System - Github online repository hosting
 
 Σχετικό μάθημα για το Git https://classroom.udacity.com/courses/ud775
 
-### Οδηγίες
+### Ξεκινάμε!
 
 Μάθημα στο Udacity: https://classroom.udacity.com/courses/ud853/lessons/1395568821/concepts/15824886820923
+
+Στο 2ο μάθημα θα ξεκινήσουμε την κατασεκυή απο την αρχή μια εφαρμογής ανάγνωσης καιρικών συνθηκών σε λίστα.
+
+![alt tag](https://github.com/UomMobileDevelopment/Lesson02-material/blob/master/Shunshine-dummy-screen-smaller.png)
+
+
 
 
 - Ξεκινάμε σχεδιάζοντας το mockup σχέδιο της οθόνης μας. Πώς θέλουμε να εμφανίζονται οι καιρικές συνθήκες;
