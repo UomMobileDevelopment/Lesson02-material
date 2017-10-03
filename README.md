@@ -44,11 +44,11 @@ android:gravity="center_vertical"
 ```
 
 - Εισαγωγή στο Responsive design. Γιατί είναι σημαντικό; (γιατί έχουμε πολλά και διάφορα μεγέθη οθονών και συσκευών).
-Τρόπος σκέψης για να χτίζω responsive layouts. Παραδείγματα (http://rollpark.us/, https://www.wired.com/ http://www.theatlantic.com/world/ ). Επεξήγηση bootstrap design col-12 scheme κλπ.
+Τρόπος σκέψης για να χτίζω responsive layouts. Παραδείγματα (http://rollpark.us/, https://www.wired.com/ http://www.theatlantic.com/world/ ).
 
 - Layout Managers. Κυριότεροι: Frame Layout, Linear Layout, Relative Layout
 
-- Frame: ιδανικό για απλές περιπτώσης όπου στην οθόνη έχουμε μόνο ένα συστατικό, όπως πχ μια λίστα
+- Frame: ιδανικό για απλές περιπτώσεις όπου στην οθόνη έχουμε μόνο ένα συστατικό, όπως πχ μια λίστα
 
 - Linear: ιδανικό για στίβαγμα συστατικων το ένα δίπλα στο άλλο ή το ένα κάτω απο το άλλο. Μας βοηθά επίσης να χωρίσουμε την οθόνη σε μέρη.
 
